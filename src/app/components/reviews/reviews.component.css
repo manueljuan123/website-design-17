@@ -1,0 +1,84 @@
+body {
+  background-image: url(../../../assets/img/fondo.jpg); /* Especifica la ruta de la imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+}
+
+.titulo_reseñas {
+  text-align: center;
+  width: auto;
+  color: white;
+}
+
+.contenedor_tarjetas {
+  display: flex;
+  justify-content: space-between; /* Para distribuir las tarjetas horizontalmente */
+  flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan si no caben en una fila */
+  margin: 0 -5px; /* Ajusta el margen para compensar los márgenes negativos de las tarjetas */
+}
+
+.card {
+  width: 200px; /* Ajusta el ancho  */
+  height: 150px; /* Ajusta la altura */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.tarjeta_izquierda {
+  align-self: flex-start; /* Alinear al principio del contenedor */
+  margin-left: 10%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+}
+
+.tarjeta_centro {
+  align-self: center; /* Alinear al centro verticalmente */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+}
+
+.tarjeta_derecha {
+  align-self: flex-end; /* Alinear al final del contenedor */
+  margin-right: 10%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+}
+
+.star {
+  color: gold;
+  font-size: 30px;
+}
+
+.starbad {
+  color: gray;
+  font-size: 30px;
+}
+
+.imagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.tarjeta_izquierda:hover,
+.tarjeta_centro:hover,
+.tarjeta_derecha:hover {
+  transform: scale(1.05);
+}
+
+.boton {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100%; /* Ajusta la altura del contenedor al 100% del padre */
+}
+
+/* Opcional: Estilos adicionales para el botón */
+.boton button {
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  font-size: 16px; /* Tamaño de fuente */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+}

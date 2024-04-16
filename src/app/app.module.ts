@@ -11,6 +11,8 @@ import { HomeContainerComponent } from './containers/home-container/home-contain
 import { ContactContainerComponent } from './containers/contact-container/contact-container.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ServicesContainerComponent } from './containers/services-container/services-container.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { ReviewsContainerComponent } from './containers/reviews-container/reviews-container.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ServicesContainerComponent } from './containers/services-container/serv
     HomeContainerComponent,
     ContactContainerComponent,
     ServicesComponent,
-    ServicesContainerComponent
+    ServicesContainerComponent,
+    ReviewsComponent,
+    ReviewsContainerComponent
   ],
   imports: [
     BrowserModule,
