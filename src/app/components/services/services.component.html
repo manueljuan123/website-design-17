@@ -1,0 +1,59 @@
+<!-- SERVICES -->
+<section>
+  <h2 id="titulo">Servicios</h2>
+  <h2 id="subtitulo">Ingenieros Grupo 17</h2>
+  <div class="container">
+    <!-- Panel uno -->
+    <div class="card_uno">
+      <img class="imagen" src="assets/img/software.jpg" class="card-img-top" alt="..." />
+      <h5 class="card-title mt-3">Desarrollo de software</h5>
+      <br />
+      <button class="btn btn-primary accordion" (click)="togglePanel(1)">{{showPanel1 ? 'Ver menos' : 'Ver más'}}</button>
+      <div *ngIf="showPanel1" class="panel">
+        <p>
+          Transforma tu negocio. Simplifica los procesos, mejora la experiencia
+          del usuario y ofrece un sistema común para gestionar y hacer crecer tu
+          empresa con eficacia.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Panel dos -->
+    <div class="card_dos">
+      <img class="imagen" src="assets/img/web.jpg" class="card-img-top" alt="..." />
+      <h5 class="card-title mt-3">Responsive</h5>
+      <br />
+      <button class="btn btn-primary accordion" (click)="togglePanel(2)">{{showPanel2 ? 'Ver menos' : 'Ver más'}}</button>
+      <div *ngIf="showPanel2" class="panel">
+        <p>
+          ¡Destaca en línea con nuestro desarrollo web personalizado! En
+          Ingenieros 17, creamos sitios web impactantes y funcionales que se
+          adaptan a tus necesidades. Desde el diseño hasta el lanzamiento, te
+          ofrecemos soluciones a medida para potenciar tu presencia en la web.
+          Contáctanos hoy mismo para comenzar.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Panel tres -->
+    <div class="card_tres">
+      <img class="imagen" src="assets/img/API.png" class="card-img-top" alt="..." />
+      <h5 class="card-title mt-3">Desarrollo web</h5>
+      <br />
+      <button class="btn btn-primary accordion" (click)="togglePanel(3)">{{showPanel3 ? 'Ver menos' : 'Ver más'}}</button>
+      <div *ngIf="showPanel3" class="panel">
+        <p>
+          ¡Potencia tu negocio con nuestras soluciones API! En Ingenieros 17,
+          ofrecemos desarrollo API personalizado para optimizar tus procesos y
+          expandir tus servicios. Nuestro equipo experto te ayudará a construir
+          y gestionar APIs robustas y escalables. ¡Haz crecer tu negocio con
+          nosotros!
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+</section>
+
+<!-- END SERVICES -->

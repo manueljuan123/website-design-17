@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 250px;
+}
+.imagen {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-img-top {
+  max-width: 380px;
+  max-height: 220px;
+}
+
+.card_uno,
+.card_dos,
+.card_tres {
+  flex: 1;
+  margin: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.card_uno:hover,
+.card_dos:hover,
+.card_tres:hover {
+  transform: scale(1.05);
+}
+
+#titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+#subtitulo {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
