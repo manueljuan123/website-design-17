@@ -1,4 +1,4 @@
-body {
+.container {
   background-image: url(../../../assets/img/fondo.jpg); /* Especifica la ruta de la imagen */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
   background-position: center; /* Centra la imagen en el fondo */
@@ -67,6 +67,8 @@ body {
 .tarjeta_centro:hover,
 .tarjeta_derecha:hover {
   transform: scale(1.05);
+  background-color: white;
+
 }
 
 .boton {
@@ -81,4 +83,8 @@ body {
   padding: 10px 20px; /* Ajusta el padding según sea necesario */
   font-size: 16px; /* Tamaño de fuente */
   box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+}
+
+.card-body {
+  background-color: white;
 }
